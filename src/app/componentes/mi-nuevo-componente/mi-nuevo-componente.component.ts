@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CataComponent } from '../cata/cata.component';
-import { PeliculasComponent } from '../componentes/peliculas/peliculas.component';
+import { PeliculasComponent } from '../peliculas/peliculas.component';
 
 @Component({
   selector: 'mi-nuevo-componente',

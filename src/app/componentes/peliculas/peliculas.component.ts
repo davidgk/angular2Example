@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // Importamos la clase del servicio
-import {PeliculaService} from '../../services/pelicula.service';
+import {PeliculaService} from '../../services/peliculas/pelicula.service';
 
 
 @Component({
