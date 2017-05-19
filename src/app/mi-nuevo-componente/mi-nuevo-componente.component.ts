@@ -10,6 +10,7 @@ export class MiNuevoComponenteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('componente inicializado...');  
   }
 
 }

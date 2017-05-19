@@ -9,7 +9,7 @@ import { MiNuevoComponenteComponent } from './mi-nuevo-componente/mi-nuevo-compo
 @NgModule({
   declarations: [
     AppComponent,
-    MiNuevoComponenteComponent
+    MiNuevoComponenteComponent,
   ],
   imports: [
     BrowserModule,
