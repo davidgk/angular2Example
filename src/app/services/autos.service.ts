@@ -5,4 +5,9 @@ export class AutosService {
 
   constructor() { }
 
+  getAuto(matricula: string) {
+    let mensajeAuto = "Su auto posee la matricula "+ matricula;
+    return mensajeAuto;
+  }
+
 }
