@@ -6,7 +6,7 @@ import {Observable} from "rxjs/Observable";
 
 
 @Injectable()
-export class PaisesService {
+export class RestExampleService {
 
   constructor(private _http: Http){}
  

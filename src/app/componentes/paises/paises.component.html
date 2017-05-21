@@ -1,9 +1,40 @@
-<h2>Paises</h2>
-<ul>
-    <li>España</li>
-    <li>Mexico</li>
-    <li>Colombia</li>
+<h2>Recorriendo una lista obtenida de un servicio Rest</h2>
 
+<table>
+    <tr *ngFor="let obj of posts; let i = index">
+        <td>{{obj.id}}</td>
+        <td>{{obj.title}}</td>
+        <td>{{i}}</td>
+    </tr>
+</table>
+
+<br>
+<b> *ngFor Demo</b>
+<ul>
+ <li *ngFor="let obj of posts">
+  {{obj.id}} - {{obj.title}}
+ </li>
 </ul>
 
-<p>{{posts}}</p>
+<b> ngFor with template Tag </b>
+<ul>
+ <template ngFor let-obj [ngForOf] = "posts"  let-i = "index">
+   <li>  Row {{i}} : {{obj.id}} - {{obj.title}} </li>
+ </template>
+</ul>
+<br>
+<b>index variable demo </b>
+ <p *ngFor="let obj of posts; let i = index">
+  Row {{i}} : id: {{obj.id}}
+ </p>
+<br>
+ <b>first and last variable demo </b>
+ <div *ngFor="let obj of posts; let i = index; let f=first; let l=last;">
+  Row {{i}} : id: {{obj.id}}, is first row: {{f}}, is last row: {{l}}
+ </div>
+<br>
+ <b>even and odd variable demo </b>
+ <div *ngFor="let obj of posts; let i = index; let e=even; let o=odd;">
+  Row {{i}} : id: {{obj.id}}, is even row: {{e}}, is odd row: {{o}}
+ </div>
+

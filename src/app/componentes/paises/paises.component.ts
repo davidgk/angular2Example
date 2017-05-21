@@ -1,25 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 // Importamos la clase del servicio
-import {PaisesService} from '../../services/paises/paises.service';
+import {RestExampleService} from '../../services/rest-example/rest-example.service';
  
 @Component({
-  selector: 'paises',
+  selector: 'using-apis-and-list',
   templateUrl: './paises.component.html',
   styleUrls: ['./paises.component.css'],
-  providers:[PaisesService]
+  providers:[RestExampleService]
 })
 
 export class PaisesComponent implements OnInit {
 
-  public posts;
+  public posts=[];
   errorMessage;
   // cargamos el servicio
-  constructor(private _paisesService: PaisesService){
+  constructor(private _restExampleService: RestExampleService){
     // Llamamos al método del servicio
-    this._paisesService.getPosts()
+    this._restExampleService.getPosts()
             .subscribe(
                 result => {
-                        this.posts = result;
+                        for(let i = 0; i<3; i++){
+                          this.posts[i]=result[i];  
+                        }
+                        //this.posts = result;
                         console.log(this.posts);
                 },
                 error => {
