@@ -4,12 +4,12 @@ import {RestExampleService} from '../../services/rest-example/rest-example.servi
  
 @Component({
   selector: 'using-apis-and-list',
-  templateUrl: './paises.component.html',
-  styleUrls: ['./paises.component.css'],
+  templateUrl: './rest-example.component.html',
+  styleUrls: ['./rest-example.component.css'],
   providers:[RestExampleService]
 })
 
-export class PaisesComponent implements OnInit {
+export class RestExampleComponent implements OnInit {
 
   public posts=[];
   errorMessage;

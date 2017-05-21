@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MiNuevoComponenteComponent } from './componentes/mi-nuevo-componente/mi-nuevo-componente.component';
 import { CataComponent } from './componentes/cata/cata.component';
 import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
-import { PaisesComponent } from './componentes/paises/paises.component';
+import { RestExampleComponent } from './componentes/rest-example/rest-example.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { PaisesComponent } from './componentes/paises/paises.component';
     MiNuevoComponenteComponent,
     CataComponent,
     PeliculasComponent,
-    PaisesComponent,
+    RestExampleComponent,
   ],
   imports: [
     BrowserModule,
