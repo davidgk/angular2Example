@@ -8,6 +8,8 @@ import { MiNuevoComponenteComponent } from './componentes/mi-nuevo-componente/mi
 import { CataComponent } from './componentes/cata/cata.component';
 import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
 import { RestExampleComponent } from './componentes/rest-example/rest-example.component';
+import { NavigatorComponent } from './componentes/navigator/navigator.component';
+import { RouterOutletComponent } from './componentes/navigator/router-outlet/router-outlet.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { RestExampleComponent } from './componentes/rest-example/rest-example.co
     CataComponent,
     PeliculasComponent,
     RestExampleComponent,
+    NavigatorComponent,
+    RouterOutletComponent,
   ],
   imports: [
     BrowserModule,
