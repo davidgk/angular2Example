@@ -19,6 +19,7 @@ import { CourseCardsComponent } from './componentes/ejemplo-rutas/courses/course
 import { PrimerosEjemplosComponent } from './componentes/primeros-ejemplos/primeros-ejemplos.component';
 import { AnidarComponentesComponent } from './componentes/anidar-componentes/anidar-componentes.component';
 import { RestAndNgforComponent } from './componentes/rest-and-ngfor/rest-and-ngfor.component';
+import { SideMenuComponent } from './componentes/ejemplo-rutas/courses/sidemenu/sidemenu.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { RestAndNgforComponent } from './componentes/rest-and-ngfor/rest-and-ngf
     PrimerosEjemplosComponent,
     AnidarComponentesComponent,
     RestAndNgforComponent,
+    SideMenuComponent,
   ],
   imports: [
     BrowserModule,
