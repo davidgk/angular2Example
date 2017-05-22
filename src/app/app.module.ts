@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule,JsonpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MiNuevoComponenteComponent } from './componentes/mi-nuevo-componente/mi-nuevo-componente.component';
@@ -9,7 +10,12 @@ import { CataComponent } from './componentes/cata/cata.component';
 import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
 import { RestExampleComponent } from './componentes/rest-example/rest-example.component';
 import { NavigatorComponent } from './componentes/navigator/navigator.component';
-import { RouterOutletComponent } from './componentes/navigator/router-outlet/router-outlet.component';
+import { RouterOutletComponent } from './componentes/router-outlet/router-outlet.component';
+import { HomeComponent } from './componentes/ejemplo-rutas/home/home.component';
+import { AboutComponent } from './componentes/ejemplo-rutas/about/about.component';
+import { CoursesComponent } from './componentes/ejemplo-rutas/courses/courses.component';
+import { routerConfig } from './top-menu.config';
+
 
 @NgModule({
   declarations: [
@@ -20,12 +26,16 @@ import { RouterOutletComponent } from './componentes/navigator/router-outlet/rou
     RestExampleComponent,
     NavigatorComponent,
     RouterOutletComponent,
+    HomeComponent,
+    AboutComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    RouterModule.forRoot(routerConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
