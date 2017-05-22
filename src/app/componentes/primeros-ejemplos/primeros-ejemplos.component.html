@@ -1,0 +1,13 @@
+<p [hidden]="!visible">
+  Adios, buena suerte!
+</p>  
+<button (click)="decirAdios()">decir Adios</button>
+
+<p>
+  ¿Cómo te llamas?  <input type="text" [(ngModel)]="quien">
+</p>
+
+<p>
+  Hola {{quien}}
+</p>
+<br><br><br><br><br><br><br>

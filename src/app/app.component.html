@@ -9,19 +9,6 @@
 <br><br><br><br>
 <router-outlet></router-outlet>
 
-<p [hidden]="!visible">
-  Adios, buena suerte!
-</p>  
-<button (click)="decirAdios()">decir Adios</button>
-
-<p>
-  ¿Cómo te llamas?  <input type="text" [(ngModel)]="quien">
-</p>
-
-<p>
-  Hola {{quien}}
-</p>
-
 <mi-nuevo-componente></mi-nuevo-componente>
 <cata></cata>
 

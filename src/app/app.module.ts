@@ -14,7 +14,9 @@ import { RouterOutletComponent } from './componentes/router-outlet/router-outlet
 import { HomeComponent } from './componentes/ejemplo-rutas/home/home.component';
 import { AboutComponent } from './componentes/ejemplo-rutas/about/about.component';
 import { CoursesComponent } from './componentes/ejemplo-rutas/courses/courses.component';
-import { routerConfig } from './top-menu.config';
+import { routerConfig } from './routes-configuration/top-menu.config';
+import { CourseCardsComponent } from './componentes/ejemplo-rutas/courses/course-cards/course-cards.component';
+import { PrimerosEjemplosComponent } from './componentes/primeros-ejemplos/primeros-ejemplos.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { routerConfig } from './top-menu.config';
     HomeComponent,
     AboutComponent,
     CoursesComponent,
+    CourseCardsComponent,
+    PrimerosEjemplosComponent,
   ],
   imports: [
     BrowserModule,
