@@ -5,8 +5,8 @@ import { HttpModule,JsonpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MiNuevoComponenteComponent } from './componentes/mi-nuevo-componente/mi-nuevo-componente.component';
-import { CataComponent } from './componentes/cata/cata.component';
+import { MiNuevoComponenteComponent } from './componentes/anidar-componentes/mi-nuevo-componente/mi-nuevo-componente.component';
+import { CataComponent } from './componentes/anidar-componentes/cata/cata.component';
 import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
 import { RestExampleComponent } from './componentes/rest-example/rest-example.component';
 import { NavigatorComponent } from './componentes/navigator/navigator.component';
@@ -17,6 +17,8 @@ import { CoursesComponent } from './componentes/ejemplo-rutas/courses/courses.co
 import { routerConfig } from './routes-configuration/top-menu.config';
 import { CourseCardsComponent } from './componentes/ejemplo-rutas/courses/course-cards/course-cards.component';
 import { PrimerosEjemplosComponent } from './componentes/primeros-ejemplos/primeros-ejemplos.component';
+import { AnidarComponentesComponent } from './componentes/anidar-componentes/anidar-componentes.component';
+import { RestAndNgforComponent } from './componentes/rest-and-ngfor/rest-and-ngfor.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { PrimerosEjemplosComponent } from './componentes/primeros-ejemplos/prime
     CoursesComponent,
     CourseCardsComponent,
     PrimerosEjemplosComponent,
+    AnidarComponentesComponent,
+    RestAndNgforComponent,
   ],
   imports: [
     BrowserModule,

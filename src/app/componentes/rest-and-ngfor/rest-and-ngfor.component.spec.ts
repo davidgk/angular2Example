@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MiNuevoComponenteComponent } from './mi-nuevo-componente.component';
+import { RestAndNgforComponent } from './rest-and-ngfor.component';
 
-describe('MiNuevoComponenteComponent', () => {
-  let component: MiNuevoComponenteComponent;
-  let fixture: ComponentFixture<MiNuevoComponenteComponent>;
+describe('RestAndNgforComponent', () => {
+  let component: RestAndNgforComponent;
+  let fixture: ComponentFixture<RestAndNgforComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MiNuevoComponenteComponent ]
+      declarations: [ RestAndNgforComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MiNuevoComponenteComponent);
+    fixture = TestBed.createComponent(RestAndNgforComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
