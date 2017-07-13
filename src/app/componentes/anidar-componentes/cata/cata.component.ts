@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CataComponent implements OnInit {
 
-  valor="Chimichanga";
+  valor="Mi bella Catalina";
 
   constructor() { }
 
